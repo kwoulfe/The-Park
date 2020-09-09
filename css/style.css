@@ -44,6 +44,31 @@
   .fixed-top {
       left: auto;
   }
+
+  .header {
+    background-image: url(images/venice-text.png);
+    /* background-image: url(images/duo.JPG); */
+    /* background-image: url(images/duo-flip2.JPG); */
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 70%;
+    /* padding-top: 52%; */
+    /* background-attachment: fixed; */
+    background-position: center top;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+  }
+
+  .fa-hamburger {
+      font-size: 25px;
+  }
+
+  #sidebar ul {
+      text-align: center;
+  }
   
     /* ---------------------------------------------
       SIDE MENU ADDITION
@@ -68,7 +93,7 @@
   }
   
   #sidebar {
-    width: 150px;
+    /* width: 150px; */
     position: fixed;
     top: 75px;
     /* left: 0; */
