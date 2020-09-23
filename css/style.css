@@ -111,10 +111,11 @@
   }
   
   #sidebar ul li a {
-      padding: 10px 20px 10px 10px;
-      font-size: .9em;
+      padding: 10px 31px 10px 10px;
+      font-size: 2em;
       display: block;
-      font-family: 'erika_ormigregular';
+      /* font-family: 'erika_ormigregular'; */
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       color: white;
       /* color: rgb(197, 78, 75); */
   }
@@ -201,3 +202,19 @@
           display: none;
       }
   }
+
+  @media (max-width: 768px) {
+    #content.active {
+        width: calc(100% - 67px);
+    }
+    #sidebar ul li a {
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    #sidebar ul li a {
+        font-size: 1.25em;
+        padding-right: 22px;
+    }
+}
