@@ -69,7 +69,55 @@
   #sidebar ul {
       text-align: center;
   }
+
+  .quote {
+      padding-bottom: 40px;
+  }
+
+  .video {
+    padding: 40px 10px 20px 10px
+  }
+
+  #video {
+    /* overflow: hidden; */
+    padding-bottom: 56.25%;
+    position: relative;
+    /* height: 0; */
+  }
   
+  #video iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .bio {
+      margin-top: 3rem;
+  }
+
+  /* FOOTER */
+
+.page-footer {
+    padding: 3rem 2rem 3rem 2rem;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.page-footer i {
+    color: white;
+    padding: 0 10px 0 10px;
+}
+
+.align-self-center {
+    padding: 10px 0 10px 0;
+}
+
+.align-self-center a {
+    font-size: 35px
+}
     /* ---------------------------------------------
       SIDE MENU ADDITION
     ----------------------------------------------- */
@@ -210,7 +258,16 @@
     #sidebar ul li a {
         padding-right: 15px;
     }
+    .video {
+        padding: 50px 10px 20px 10px
+      }
 }
+
+@media screen and (max-width: 576px) {
+    .video {
+      padding: 40px 10px 30px 10px
+    }
+  }
 
 @media (max-width: 425px) {
     #sidebar ul li a {
@@ -218,3 +275,9 @@
         padding-right: 22px;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .video {
+      padding: 30px 10px 0 10px
+    }
+  }
