@@ -120,16 +120,21 @@
                     </div>
                     <div class="col-sm-6 col-12" style="text-align: right; color: white;">
                         <h5>Contact</h5>
-                        <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeiDCNneh3A5SNAwA-PCOTmEwTQGuJGBEn4ujQOll43CK9HBg/formResponse">
+
+                        <script type="text/javascript">var submitted = false;</script>
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='form-submitted.html';}"></iframe>
+
+                        <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeiDCNneh3A5SNAwA-PCOTmEwTQGuJGBEn4ujQOll43CK9HBg/formResponse"
+                            target="hidden_iframe" onsubmit="submitted=true;">
                             <div class="form-group">
                                 <!-- <label for="exampleInputEmail1">Email address</label> -->
                                 <input type="text" name="entry.568202081" class="form-control" id="firstName" aria-describedby="firstNameHelp" placeholder="* first name">
 
-                                <input type="text" class="form-control" id="lastName" aria-describedby="lastNameHelp" placeholder="last name">
+                                <input type="text" name="entry.883132820" class="form-control" id="lastName" aria-describedby="lastNameHelp" placeholder="last name">
 
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="* email">
+                                <input type="email" name="entry.978750313" class="form-control" id="email" aria-describedby="emailHelp" placeholder="* email">
 
-                                <input type="textarea" class="form-control" id="inputMessage" aria-describedby="messageHelp" placeholder="* what's happening?">
+                                <input type="textarea" name="entry.1873245615" class="form-control" id="inputMessage" aria-describedby="messageHelp" placeholder="* what's happening?">
                             </div>
                             <button class="contact-button" type="submit">Submit</button>
                         </form>
