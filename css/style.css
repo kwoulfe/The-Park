@@ -96,8 +96,59 @@
   .bio {
       margin-top: 3rem;
   }
+/* FORM */
 
-  /* FOOTER */
+form {
+    width: 75%;
+    float: right;
+}
+
+.form-control {
+    background-color: black;
+    border: none;
+    border-radius: 0;
+    margin-top: 80px;
+    text-align: right;
+    border-bottom: 1px solid white;
+}
+
+.form-control:valid {
+    background-color: black;
+    color: white;
+}
+
+.form-control:invalid {
+    background-color: black;
+    color: white;
+}
+
+.contact-button {
+    border: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-top: 80px;
+    color: white;
+    background-color: black;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+/* FOOTER */
 
 .page-footer {
     padding: 3rem 2rem 3rem 2rem;
