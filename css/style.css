@@ -97,11 +97,20 @@
   .bio {
       margin-top: 3rem;
   }
+
+  .contact-row {
+      padding-top: 3rem;
+  }
+
 /* FORM */
 
 form {
     width: 75%;
     float: right;
+}
+
+.form-field {
+    text-align: right;
 }
 
 .form-control {
@@ -303,13 +312,13 @@ label:focus,
       }
   }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .form-control {
         margin-top: 60px;
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     #content.active {
         width: calc(100% - 67px);
     }
@@ -336,9 +345,13 @@ label:focus,
     }
     .page-footer {
         font-size: 1.15rem;
+        padding: 2rem;
     }
     .page-footer i {
         font-size: 1.75rem;
+    }
+    .contact-row {
+        padding-top: 2rem;
     }
     .contact-button {
         margin-top: 40px;
@@ -351,10 +364,48 @@ label:focus,
     }
   }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
     #sidebar ul li a {
         font-size: 1.25em;
         padding-right: 22px;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    .video {
+        padding: 20px 10px 20px 10px;
+    }
+    .quote {
+        padding-bottom: 20px;
+    }
+    .bench {
+        display: none;
+    }
+    .contact-row {
+        padding-top: 1rem;
+    }
+    .form-field {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    form {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 0 2rem 0 2rem;
+    }
+    .form-control {
+        text-align: center;
+    }
+    .bio {
+        text-align: center;
+    }
+    .page-footer {
+        font-size: 1rem;
+        padding: 2rem;
+    }
+    .page-footer i {
+        font-size: 1.5rem;
     }
 }
 
