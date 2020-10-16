@@ -10,6 +10,7 @@
   html, body {
     margin: 0;
     height: 100%;
+    font-family: helvetica neue;
   }
   
   body {
@@ -30,7 +31,7 @@
   
   p {
     color: white;
-    font-family: 'Pavanam', sans-serif;
+    /* font-family: 'Pavanam', sans-serif; */
   }
   
   .hidden {
@@ -302,7 +303,13 @@ label:focus,
       }
   }
 
-  @media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .form-control {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 768px) {
     #content.active {
         width: calc(100% - 67px);
     }
@@ -310,8 +317,32 @@ label:focus,
         padding-right: 15px;
     }
     .video {
-        padding: 50px 10px 20px 10px
-      }
+        padding: 40px 10px 20px 10px
+    }
+    .bio {
+        margin-top: 1rem;
+    }
+    .form-control {
+        margin-top: 30px;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 14px;
+    }
+    .page-footer {
+        font-size: 1.15rem;
+    }
+    .page-footer i {
+        font-size: 1.75rem;
+    }
+    .contact-button {
+        margin-top: 40px;
+    }
 }
 
 @media screen and (max-width: 576px) {
